@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student DashBoard</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #1e1e1e;
+        }
+        h1{
+            color: #CED7E0;
+            font-family: sans-serif;
+            margin: 10px;
+            margin-left: 50px;
+        }
+        /* Coding For Large Screen(>576px) starts here */
+        .main-page{
+            width: 88%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(11, 50px);
+            margin: 0 auto;
+            border: 0.5px solid #ccc;
+            overflow-x: hidden;
+        }
+        .item{
+            color: whitesmoke;
+            font-family: sans-serif;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            padding-top: 15px;
+            padding-left: 15px;
+        }
+        /* Coding For Small Screen(<=576px) starts here */
+        @media screen and (max-width : 576px)
+        {
+            .main-page{
+            width: 88%;
+            height: auto;
+            display: grid;
+            grid-template-columns: 150px 350px 150px;
+            grid-template-rows: repeat(11, 50px);
+            margin: 0 auto;
+            border: 0.5px solid #ccc;
+            overflow-x: scroll;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1>Student DashBoard</h1>
+    <div class="main-page">
+        <div class="item">Name</div>
+        <div class="item">Email</div>
+        <div class="item">Phone</div>
+        <div class="item">Rahul Sharma</div>
+        <div class="item">rahul.sharma@example.com</div>
+        <div class="item">987654321</div>
+        <div class="item">Priya Patel</div>
+        <div class="item">priya.patel@example.com</div>
+        <div class="item">8765432109</div>
+        <div class="item">Amit Singh</div>
+        <div class="item">amit.singh@example.com</div>
+        <div class="item">7654321098</div>
+        <div class="item">Sneha Verma</div>
+        <div class="item">sneha.verma@example.com</div>
+        <div class="item">6543210987</div>
+        <div class="item">Neha Gupta</div>
+        <div class="item">neha.gupta@example.com</div>
+        <div class="item">5432109876</div>
+        <div class="item">Mohit Agarwal</div>
+        <div class="item">mohit.agarwal@example.com</div>
+        <div class="item">4321098765</div>
+        <div class="item">Rajesh Kumar</div>
+        <div class="item">rajesh.kumar@example.com</div>
+        <div class="item">3210987654</div>
+        <div class="item">Anita Desai</div>
+        <div class="item">anita.desai@example.com</div>
+        <div class="item">2109876543</div>
+        <div class="item">Varun Malhotra</div>
+        <div class="item">varun.malhotra@example.com</div>
+        <div class="item">1098765432</div>
+        <div class="item">Pooja Mehta</div>
+        <div class="item">pooja.mehat@example.com</div>
+        <div class="item">0987654321</div>
+    </div>
+</body>
+</html>

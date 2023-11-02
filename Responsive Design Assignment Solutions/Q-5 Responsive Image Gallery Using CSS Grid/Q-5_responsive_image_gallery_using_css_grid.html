@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        /* coding for large screens (>576px) starts here*/
+        .main-page{
+            width: 83%;
+            height: 600px;
+            border: 3px solid black;
+            margin: 0 auto;
+        }
+        .main-page>h1{
+            text-align: center;
+            font-family: sans-serif;
+        }
+        .img-gallery{
+            width: 97%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 220px 220px;
+            gap: 10px;
+            margin: 0 auto;
+        }
+        .img-gallery>div{
+            border: 2px solid black;
+            border-radius: 15px;
+        }
+        .img-1{
+            background-image: url(images/pic1.jpg);
+            background-size: cover;
+        }
+        .img-2{
+            background-image: url(images/pic2.jpg);
+            background-size: cover;
+        }
+        .img-3{
+            background-image: url(images/pic3.jpg);
+            background-size: cover;
+        }
+        .img-4{
+            background-image: url(images/pic4.jpg);
+            background-size: cover;
+        }
+        .img-5{
+            background-image: url(images/pic5.jpg);
+            background-size: cover;
+        }
+        .img-6{
+            background-image: url(images/pic6.jpg);
+            background-size: cover;
+        }
+        /* coding for small screens (<= 576px) starts here*/
+        @media screen and (max-width : 576px)
+        {
+            .main-page
+            {
+                width: 83%;
+                height: 1640px;
+                border: 3px solid black;
+                margin: 0 auto;
+            }
+            .img-gallery
+            {
+                width: 97%;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(6, 250px);
+                gap: 10px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-page">
+        <h1><u>Random Images</u></h1>
+        <div class="img-gallery">
+            <div class="img-1"></div>
+            <div class="img-2"></div>
+            <div class="img-3"></div>
+            <div class="img-4"></div>
+            <div class="img-5"></div>
+            <div class="img-6"></div>
+        </div>
+    </div>    
+</body>
+</html>
